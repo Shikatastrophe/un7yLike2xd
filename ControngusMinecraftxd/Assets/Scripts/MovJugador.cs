@@ -8,6 +8,14 @@ public class MovJugador : MonoBehaviour
     public float speed = 2;
     public GameObject PuntoA;
     public GameObject PuntoB;
+
+    public GameObject pies;
+    public Rigidbody rb;
+    public float FuerzaSalto;
+
+    public static bool TouchPiso=false;
+
+    BoxCollider box;
     // Start is called before the first frame update
     void Start()
     {
@@ -55,6 +63,23 @@ public class MovJugador : MonoBehaviour
 
         }
 
+
+        if (Input.GetButton("Jump") && TouchPiso)
+        {
+            rb.AddForce(transform.up * FuerzaSalto);
+        }
+
+        box = GetComponent<BoxCollider>();
+
+        if (Input.GetButton("CRTL"))
+        {
+
+            box.center = new Vector3(box.center.x, 1.6f, box.center.z);
+        }
+        else
+        {
+            box.center = new Vector3(box.center.x, 0.9782128f, box.center.z);
+        }
     }
 
 

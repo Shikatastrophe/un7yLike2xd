@@ -261,7 +261,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 962828205854736199}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: -26.5, y: 10, z: -5.9000006}
+  m_LocalPosition: {x: -26.03, y: 10.26, z: -5.9000006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -331,7 +331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sizex: 3.07
-  sizey: 10
+  sizey: 10.16
   sizez: 10.97
 --- !u!1 &962828206108880632
 GameObject:
@@ -345,9 +345,10 @@ GameObject:
   - component: {fileID: 962828206108880637}
   - component: {fileID: 962828206108880638}
   - component: {fileID: 962828206108880639}
+  - component: {fileID: 4720352450322497472}
   m_Layer: 0
   m_Name: Pisongus
-  m_TagString: Untagged
+  m_TagString: Piso
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -360,7 +361,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 962828206108880632}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -26.07, y: 0, z: 5.5}
+  m_LocalPosition: {x: -25.56, y: 0, z: 4.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -432,6 +433,19 @@ MonoBehaviour:
   sizex: 12
   sizey: 0.5
   sizez: 35.04
+--- !u!65 &4720352450322497472
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962828206108880632}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.364803, y: 0.9554776, z: 35.25925}
+  m_Center: {x: 4.682403, y: -0.022261202, z: 17.12963}
 --- !u!1 &962828206193977130
 GameObject:
   m_ObjectHideFlags: 0
