@@ -26,14 +26,14 @@ public class MovJugador : MonoBehaviour
         //Debug.Log("horizontal"+horizontal);
         //Debug.Log("vertical"+vertical);
 
-        if (horizontal < -0.1f && gameObject.transform.position.z < PuntoA.transform.position.z)
+        if (horizontal < -0.1f && gameObject.transform.position.z > PuntoA.transform.position.z)
         {
             //Debug.Log("Izq");
             //gameObject.transform.position = formulas.Translacion(gameObject.transform.position, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z - 0.000001f));
             //gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z-0.1f);
             gameObject.transform.position = formulas.Translacion(gameObject.transform.position, new Vector3(PuntoA.transform.position.x, PuntoA.transform.position.y, PuntoA.transform.position.z*0.01f));
         }
-        if (horizontal > 0.1f && gameObject.transform.position.z > PuntoB.transform.position.z)
+        if (horizontal > 0.1f && gameObject.transform.position.z < PuntoB.transform.position.z)
         {
             //Debug.Log("der");
             //gameObject.transform.position = formulas.Translacion(gameObject.transform.position, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z + 0.000001f));
