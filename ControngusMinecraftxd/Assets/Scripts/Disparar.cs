@@ -14,6 +14,7 @@ public class Disparar : MonoBehaviour
 
     private float tiSigDis;
 
+
     // Start is called before the first frame update
     void Start()
     {

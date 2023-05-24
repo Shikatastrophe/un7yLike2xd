@@ -50,6 +50,7 @@ public class MovJugador : MonoBehaviour
         }
         if (vertical > 0.1f)
         {
+            gameObject.transform.Rotate(0,0,5);
             //Debug.Log("Adel");
             //gameObject.transform.position = formulas.Translacion(gameObject.transform.position, new Vector3(gameObject.transform.position.x + 0.000001f, gameObject.transform.position.y, gameObject.transform.position.z));
             //gameObject.transform.position = new Vector3(gameObject.transform.position.x+0.1f, gameObject.transform.position.y, gameObject.transform.position.z);
@@ -61,6 +62,10 @@ public class MovJugador : MonoBehaviour
             //gameObject.transform.position = formulas.Translacion(gameObject.transform.position, new Vector3(gameObject.transform.position.x - 0.000001f, gameObject.transform.position.y, gameObject.transform.position.z));
             //gameObject.transform.position = new Vector3(gameObject.transform.position.x-0.1f, gameObject.transform.position.y, gameObject.transform.position.z);
 
+        }
+        if (vertical == 0)
+        {
+            gameObject.transform.Rotate(0, 0, 0);
         }
 
 

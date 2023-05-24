@@ -111,6 +111,7 @@ GameObject:
   - component: {fileID: 962828204657270608}
   - component: {fileID: 962828204657270609}
   - component: {fileID: 962828204657270610}
+  - component: {fileID: 6433441316974728049}
   m_Layer: 0
   m_Name: Techongus
   m_TagString: Untagged
@@ -198,6 +199,19 @@ MonoBehaviour:
   sizex: 12
   sizey: 0.5
   sizez: 35.04
+--- !u!65 &6433441316974728049
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962828204657270611}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.364803, y: 0.9554776, z: 35.25925}
+  m_Center: {x: 4.682403, y: -0.022261202, z: 17.12963}
 --- !u!1 &962828205472999135
 GameObject:
   m_ObjectHideFlags: 0
