@@ -1381,6 +1381,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3043959826253839865, guid: 817f224042c48fd448f3fbd85b6ec9f8, type: 3}
+      propertyPath: speed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043959826253839865, guid: 817f224042c48fd448f3fbd85b6ec9f8, type: 3}
       propertyPath: PuntoA
       value: 
       objectReference: {fileID: 1578563509}
