@@ -3,18 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Vidapared : MonoBehaviour
+
 {
-private void OnCollisionEnter(Collision collision)
+    public int health = 100;
+
+    private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Bala"))
         {
-            GameManager.Instance.LoseHealth(25);
+            LoseHealth(25);
         }
-        
     }
-    /*
-    public static void Vida()
+    public void LoseHealth(int ReduccionVida)
     {
-        Destroy(gameObject);
-    }*/
+        health -= ReduccionVida;
+        CheckHealth();
+    }
+    public void CheckHealth()
+    {
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+            Debug.Log("Pared Destruida");
+        }
+    }
 }

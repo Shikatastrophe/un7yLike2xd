@@ -18,17 +18,24 @@ public class GameManager : MonoBehaviour
             CheckHealth();
         }
 
-        public int CheckHealth()
+        public bool CheckHealth()
         {
-            return health;
+        if (health <= 0)
+        {
+            return true;
+            Debug.Log("Pared Destruida");
+            //Destroy(gameObject);
+     
         }
+        return false;
+    }
     
     // Update is called once per frame
-    void Update()
+   /* void Update()
     {
         if (health <= 0)
         {
             Destroy(gameObject);
         }
-    }
+    }*/
 }
