@@ -5,10 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class TitleSceneManager : MonoBehaviour
 {
+    private AudioSource audio;
+    public float time;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        audio = GetComponent<AudioSource>();
+        Invoke("Play", time);
     }
 
     // Update is called once per frame
@@ -18,5 +22,10 @@ public class TitleSceneManager : MonoBehaviour
         {
             SceneManager.LoadScene(1);
         }
+    }
+
+    private void Play()
+    {
+        audio.Play();
     }
 }
