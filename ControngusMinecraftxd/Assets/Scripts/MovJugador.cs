@@ -16,6 +16,11 @@ public class MovJugador : MonoBehaviour
     public static bool TouchPiso=false;
 
     BoxCollider box;
+
+    public float w,x,y,z;
+
+    public GameObject camara;
+    public GameObject camara2;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,12 +28,12 @@ public class MovJugador : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         formulas = new Formulas();
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
-
+        
         //gameObject.transform.position = formulas.Translacion(gameObject.transform.position, new Vector3(gameObject.transform.position.x+1, gameObject.transform.position.y+1, gameObject.transform.position.z+1));
 
         //Debug.Log("horizontal"+horizontal);
@@ -50,10 +55,11 @@ public class MovJugador : MonoBehaviour
         }
         if (vertical > 0.1f)
         {
-            gameObject.transform.Rotate(0,0,5);
+            //gameObject.transform.Rotate(0,0,5);
             //Debug.Log("Adel");
             //gameObject.transform.position = formulas.Translacion(gameObject.transform.position, new Vector3(gameObject.transform.position.x + 0.000001f, gameObject.transform.position.y, gameObject.transform.position.z));
             //gameObject.transform.position = new Vector3(gameObject.transform.position.x+0.1f, gameObject.transform.position.y, gameObject.transform.position.z);
+            //transform.LookAt(camara2.transform.position);
 
         }
         if (vertical < -0.1f)
@@ -65,7 +71,7 @@ public class MovJugador : MonoBehaviour
         }
         if (vertical == 0)
         {
-            gameObject.transform.Rotate(0, 0, 0);
+            //transform.LookAt(camara.transform.position);
         }
 
 

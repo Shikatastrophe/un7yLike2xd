@@ -36,6 +36,7 @@ public class Disparar : MonoBehaviour
 
             Rigidbody rb = BTemp.GetComponent<Rigidbody>();
 
+            //rb.AddForce(transform.forward * Vel);
             rb.AddForce(transform.right * Vel);
 
             Destroy(BTemp, 2.0f);

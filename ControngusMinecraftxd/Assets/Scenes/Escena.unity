@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -407,6 +407,96 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50173d7f60ab90447912f77911a094c9, type: 3}
+--- !u!1 &543251536
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 543251537}
+  - component: {fileID: 543251538}
+  m_Layer: 0
+  m_Name: Camaraangle2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &543251537
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543251536}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -33.36, y: 8.87, z: -1.34}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &543251538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543251536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14c0773d43073574d9ecb28cd4c91b6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ply: {fileID: 1905316749}
+--- !u!1 &552108564
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 552108565}
+  - component: {fileID: 552108566}
+  m_Layer: 0
+  m_Name: Camaraangle1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &552108565
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552108564}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -33.36, y: 0, z: -1.34}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &552108566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552108564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14c0773d43073574d9ecb28cd4c91b6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ply: {fileID: 1905316749}
 --- !u!1 &652572291 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 962828205854736199, guid: c146ddf6902c29f47a816929dcbd6f24, type: 3}
@@ -1428,6 +1518,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3043959826253839865, guid: 817f224042c48fd448f3fbd85b6ec9f8, type: 3}
+      propertyPath: w
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043959826253839865, guid: 817f224042c48fd448f3fbd85b6ec9f8, type: 3}
+      propertyPath: z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043959826253839865, guid: 817f224042c48fd448f3fbd85b6ec9f8, type: 3}
       propertyPath: speed
       value: 5
       objectReference: {fileID: 0}
@@ -1439,9 +1537,41 @@ PrefabInstance:
       propertyPath: PuntoB
       value: 
       objectReference: {fileID: 1791968462}
+    - target: {fileID: 3043959826253839865, guid: 817f224042c48fd448f3fbd85b6ec9f8, type: 3}
+      propertyPath: camara
+      value: 
+      objectReference: {fileID: 552108564}
+    - target: {fileID: 3043959826253839865, guid: 817f224042c48fd448f3fbd85b6ec9f8, type: 3}
+      propertyPath: camara2
+      value: 
+      objectReference: {fileID: 543251536}
     - target: {fileID: 3043959826253839866, guid: 817f224042c48fd448f3fbd85b6ec9f8, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043959826334989536, guid: 817f224042c48fd448f3fbd85b6ec9f8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70700866
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043959826334989536, guid: 817f224042c48fd448f3fbd85b6ec9f8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.011779285
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043959826334989536, guid: 817f224042c48fd448f3fbd85b6ec9f8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.70700866
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043959826334989536, guid: 817f224042c48fd448f3fbd85b6ec9f8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.011779285
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043959826334989536, guid: 817f224042c48fd448f3fbd85b6ec9f8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 1.909
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043959826334989536, guid: 817f224042c48fd448f3fbd85b6ec9f8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 817f224042c48fd448f3fbd85b6ec9f8, type: 3}
