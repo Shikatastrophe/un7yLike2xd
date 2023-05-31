@@ -21,6 +21,8 @@ public class MovJugador : MonoBehaviour
 
     public GameObject camara;
     public GameObject camara2;
+
+    public GameObject looker;
     // Start is called before the first frame update
     void Start()
     {
@@ -60,6 +62,7 @@ public class MovJugador : MonoBehaviour
             //gameObject.transform.position = formulas.Translacion(gameObject.transform.position, new Vector3(gameObject.transform.position.x + 0.000001f, gameObject.transform.position.y, gameObject.transform.position.z));
             //gameObject.transform.position = new Vector3(gameObject.transform.position.x+0.1f, gameObject.transform.position.y, gameObject.transform.position.z);
             //transform.LookAt(camara2.transform.position);
+
 
         }
         if (vertical < -0.1f)

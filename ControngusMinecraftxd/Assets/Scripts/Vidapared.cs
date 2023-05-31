@@ -6,12 +6,13 @@ public class Vidapared : MonoBehaviour
 
 {
     public int health = 100;
+    public int damage = 10;
 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Bala"))
         {
-            LoseHealth(25);
+            LoseHealth(damage);
         }
     }
     public void LoseHealth(int ReduccionVida)

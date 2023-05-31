@@ -23,6 +23,7 @@ public class lifeSystem : MonoBehaviour
 
     public void ded()
     {
+        range = 0;
         GetComponent<MovJugador>().enabled = false;
         GetComponent<Disparar>().enabled = false;
         reiniciarNivel();

@@ -40,7 +40,7 @@ public class Disparar : MonoBehaviour
             //rb.AddForce(transform.forward * Vel);
             rb.AddForce(transform.right * Vel);
 
-            Destroy(BTemp, 2.0f);
+            Destroy(BTemp, 0.75f);
             tiSigDis = coolDown;
         }
     }
