@@ -16,6 +16,7 @@ public class lifeSystem : MonoBehaviour
         {
 
             Debug.Log("dead");
+            sfxPlayer.Instance.Dedsfx();
             ded();
         }
     }

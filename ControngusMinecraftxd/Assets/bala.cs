@@ -25,6 +25,13 @@ public class bala : MonoBehaviour
     void damagePlayer()
     {
         lifeManager.TakeLife();
+    }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            sfxPlayer.Instance.Hitsfx();
+        }
     }
 }

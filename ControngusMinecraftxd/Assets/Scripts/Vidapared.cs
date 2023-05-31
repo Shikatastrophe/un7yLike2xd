@@ -23,6 +23,7 @@ public class Vidapared : MonoBehaviour
     {
         if (health <= 0)
         {
+            sfxPlayer.Instance.Explodesfx();
             Destroy(gameObject);
             Debug.Log("Pared Destruida");
         }

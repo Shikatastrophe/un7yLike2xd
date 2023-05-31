@@ -31,6 +31,7 @@ public class Disparar : MonoBehaviour
 
         if (Input.GetButton("Fire1") && tiSigDis <= 0)
         {
+            sfxPlayer.Instance.Gunsfx();
 
             GameObject BTemp = Instantiate(BalaPrefab, Inicio.transform.position, gameObject.transform.rotation) as GameObject;
 
