@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -545,6 +545,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8534751039037062450, guid: c146ddf6902c29f47a816929dcbd6f24, type: 3}
+      propertyPath: paredd
+      value: 
+      objectReference: {fileID: 714435953}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c146ddf6902c29f47a816929dcbd6f24, type: 3}
 --- !u!1 &366779683 stripped
@@ -566,6 +570,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   damage: 10
+  paredd: {fileID: 0}
 --- !u!65 &366779686
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -827,6 +832,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8534751039037062450, guid: c146ddf6902c29f47a816929dcbd6f24, type: 3}
+      propertyPath: paredd
+      value: 
+      objectReference: {fileID: 1046023029}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c146ddf6902c29f47a816929dcbd6f24, type: 3}
 --- !u!1 &534895285
@@ -1104,6 +1113,37 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.8932209, y: 10.6318245, z: 9.994546}
   m_Center: {x: 0.48979664, y: 4.815913, z: 5.6282725}
+--- !u!1 &714435953
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 714435954}
+  m_Layer: 0
+  m_Name: MovNiv
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &714435954
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714435953}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.61, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &797236402 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 962828205472999134, guid: c146ddf6902c29f47a816929dcbd6f24, type: 3}
@@ -1457,6 +1497,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   damage: 10
+  paredd: {fileID: 0}
 --- !u!65 &1039376289
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1545,6 +1586,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8534751039037062450, guid: c146ddf6902c29f47a816929dcbd6f24, type: 3}
+      propertyPath: paredd
+      value: 
+      objectReference: {fileID: 1046023029}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c146ddf6902c29f47a816929dcbd6f24, type: 3}
 --- !u!1 &1046023029
@@ -1556,6 +1601,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1046023030}
+  - component: {fileID: 1046023031}
   m_Layer: 0
   m_Name: LevelFull
   m_TagString: Untagged
@@ -1585,6 +1631,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1046023031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046023029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d7af95680afd884bb6ef94731d53c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nv: {fileID: 714435953}
+  coolDown: 4.412
+  tiSigDis: 0
 --- !u!4 &1067613865 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 962828205472999134, guid: c146ddf6902c29f47a816929dcbd6f24, type: 3}
@@ -1710,6 +1771,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nivelongus
       objectReference: {fileID: 0}
+    - target: {fileID: 8534751039037062450, guid: c146ddf6902c29f47a816929dcbd6f24, type: 3}
+      propertyPath: paredd
+      value: 
+      objectReference: {fileID: 1046023029}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c146ddf6902c29f47a816929dcbd6f24, type: 3}
 --- !u!4 &1137009307 stripped
@@ -1776,6 +1841,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8534751039037062450, guid: c146ddf6902c29f47a816929dcbd6f24, type: 3}
+      propertyPath: paredd
+      value: 
+      objectReference: {fileID: 1046023029}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c146ddf6902c29f47a816929dcbd6f24, type: 3}
 --- !u!4 &1230802708 stripped
@@ -2074,6 +2143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   damage: 10
+  paredd: {fileID: 0}
 --- !u!65 &1481361610
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2223,6 +2293,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   damage: 10
+  paredd: {fileID: 0}
 --- !u!65 &1523114402
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2652,6 +2723,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   damage: 10
+  paredd: {fileID: 0}
 --- !u!65 &1804768814
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2864,6 +2936,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8534751039037062450, guid: c146ddf6902c29f47a816929dcbd6f24, type: 3}
+      propertyPath: paredd
+      value: 
+      objectReference: {fileID: 1046023029}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c146ddf6902c29f47a816929dcbd6f24, type: 3}
 --- !u!1001 &1189626477027213498

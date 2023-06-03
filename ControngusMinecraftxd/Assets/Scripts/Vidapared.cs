@@ -8,6 +8,8 @@ public class Vidapared : MonoBehaviour
     public int health = 100;
     public int damage = 10;
 
+    public GameObject paredd;
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Bala"))
@@ -25,6 +27,7 @@ public class Vidapared : MonoBehaviour
         if (health <= 0)
         {
             sfxPlayer.Instance.Explodesfx();
+            paredd.GetComponent<MovPared>().moverxd();
             Destroy(gameObject);
             Debug.Log("Pared Destruida");
         }
