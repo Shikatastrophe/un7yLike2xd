@@ -7,12 +7,18 @@ public class GameManager : MonoBehaviour
         public static GameManager Instance { get; private set; }
         public int health = 100;
 
+    public int coreCount;
+
+    public GameObject eye;
+
+
         private void Awake()
         {
             Instance = this;
         }
+    
 
-        public void LoseHealth(int ReduccionVida)
+    public void LoseHealth(int ReduccionVida)
         {
             health -= ReduccionVida;
             CheckHealth();
@@ -28,6 +34,15 @@ public class GameManager : MonoBehaviour
      
         }
         return false;
+    }
+
+    public void coreDestroyed()
+    {
+        coreCount--;
+        if (coreCount == 0)
+        {
+            eye.SetActive(true);
+        }
     }
     
     // Update is called once per frame

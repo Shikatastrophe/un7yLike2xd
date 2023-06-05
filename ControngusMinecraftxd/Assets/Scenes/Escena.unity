@@ -225,7 +225,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 90}
 --- !u!114 &101066044
 MonoBehaviour:
@@ -641,7 +641,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 11cfdb9263ee79f47a434bd77dd62fe2, type: 2}
     - target: {fileID: 962828205472999134, guid: c146ddf6902c29f47a816929dcbd6f24, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 962828205472999134, guid: c146ddf6902c29f47a816929dcbd6f24, type: 3}
       propertyPath: m_LocalPosition.x
@@ -880,7 +880,7 @@ Transform:
   m_Children:
   - {fileID: 1726781363}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &513153815 stripped
 GameObject:
@@ -1079,7 +1079,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &534895288
 MonoBehaviour:
@@ -1128,7 +1128,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &543251538
 MonoBehaviour:
@@ -1173,7 +1173,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &552108566
 MonoBehaviour:
@@ -1218,6 +1218,7 @@ MonoBehaviour:
   health: 100
   damage: 10
   torretas: {fileID: 620592546}
+  manager: {fileID: 0}
 --- !u!1 &652572291 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 962828205854736199, guid: c146ddf6902c29f47a816929dcbd6f24, type: 3}
@@ -1286,7 +1287,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &797236402 stripped
 Transform:
@@ -1359,7 +1360,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &841722910
 GameObject:
@@ -1390,7 +1391,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &844915499
 PrefabInstance:
@@ -1477,6 +1478,7 @@ MonoBehaviour:
   health: 100
   damage: 10
   torretas: {fileID: 513153815}
+  manager: {fileID: 0}
 --- !u!1001 &891108820
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1538,7 +1540,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5909657978969317402, guid: 90741fde23ea3d54490f373609167fc4, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5909657978969317377, guid: 90741fde23ea3d54490f373609167fc4, type: 3}
@@ -1615,7 +1617,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5909657978969317402, guid: 90741fde23ea3d54490f373609167fc4, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5909657978969317377, guid: 90741fde23ea3d54490f373609167fc4, type: 3}
@@ -1646,6 +1648,7 @@ MonoBehaviour:
   health: 100
   damage: 10
   torretas: {fileID: 706839360}
+  manager: {fileID: 1868226266}
 --- !u!1001 &973378564
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1889,7 +1892,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 962828205472999134, guid: c146ddf6902c29f47a816929dcbd6f24, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 962828205472999134, guid: c146ddf6902c29f47a816929dcbd6f24, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1976,13 +1979,13 @@ Transform:
   m_Children:
   - {fileID: 1067613865}
   - {fileID: 1003246711}
+  - {fileID: 2012304971}
   - {fileID: 797236402}
   - {fileID: 1903428592}
   - {fileID: 1398923126}
   - {fileID: 1752289690}
-  - {fileID: 2012304971}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1046023031
 MonoBehaviour:
@@ -2211,7 +2214,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1132058475 stripped
 Transform:
@@ -2232,7 +2235,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 962828205472999134, guid: c146ddf6902c29f47a816929dcbd6f24, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 962828205472999134, guid: c146ddf6902c29f47a816929dcbd6f24, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2373,6 +2376,7 @@ MonoBehaviour:
   health: 100
   damage: 10
   torretas: {fileID: 1210561713}
+  manager: {fileID: 0}
 --- !u!4 &1217338226 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4104257113608471066, guid: dac2f44f09dc0534cb2755170189b21a, type: 3}
@@ -2403,6 +2407,7 @@ MonoBehaviour:
   health: 100
   damage: 10
   torretas: {fileID: 205305335}
+  manager: {fileID: 0}
 --- !u!1 &1262787537
 GameObject:
   m_ObjectHideFlags: 0
@@ -2756,6 +2761,7 @@ MonoBehaviour:
   health: 100
   damage: 10
   torretas: {fileID: 1379556538}
+  manager: {fileID: 1868226266}
 --- !u!4 &1398923126 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 962828205472999134, guid: c146ddf6902c29f47a816929dcbd6f24, type: 3}
@@ -2820,7 +2826,7 @@ Transform:
   - {fileID: 1705073413}
   - {fileID: 588552089}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1450143425 stripped
 Transform:
@@ -2970,7 +2976,7 @@ RectTransform:
   m_Children:
   - {fileID: 1936341715}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3127,8 +3133,29 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5909657978969317380, guid: 90741fde23ea3d54490f373609167fc4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 90741fde23ea3d54490f373609167fc4, type: 3}
+--- !u!1 &1537934595 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5909657978969317402, guid: 90741fde23ea3d54490f373609167fc4, type: 3}
+  m_PrefabInstance: {fileID: 1537934594}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1537934603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1537934595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f9261a19876dc4aabe7d7d39dea77e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  damage: 10
+  torretas: {fileID: 1537934595}
 --- !u!1 &1554634237
 GameObject:
   m_ObjectHideFlags: 0
@@ -3193,7 +3220,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1631496467
 PrefabInstance:
@@ -3274,6 +3301,7 @@ MonoBehaviour:
   health: 100
   damage: 10
   torretas: {fileID: 913226894}
+  manager: {fileID: 0}
 --- !u!1 &1688074840 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6299721530344050318, guid: d750f5ed211be864ebcb5e0b5bf49d42, type: 3}
@@ -3294,6 +3322,7 @@ MonoBehaviour:
   health: 100
   damage: 10
   torretas: {fileID: 1688074840}
+  manager: {fileID: 0}
 --- !u!1001 &1700559779
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3398,7 +3427,7 @@ Transform:
   m_Children:
   - {fileID: 1262787543}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1719474095
 BoxCollider:
@@ -3535,6 +3564,7 @@ MonoBehaviour:
   health: 100
   damage: 10
   torretas: {fileID: 1768474671}
+  manager: {fileID: 1868226266}
 --- !u!1 &1791968462
 GameObject:
   m_ObjectHideFlags: 0
@@ -3564,7 +3594,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1804768811 stripped
 GameObject:
@@ -3679,6 +3709,53 @@ PrefabInstance:
     - {fileID: 6299721530344050316, guid: d750f5ed211be864ebcb5e0b5bf49d42, type: 3}
     - {fileID: 6299721530344050305, guid: d750f5ed211be864ebcb5e0b5bf49d42, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d750f5ed211be864ebcb5e0b5bf49d42, type: 3}
+--- !u!1 &1868226265
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1868226267}
+  - component: {fileID: 1868226266}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1868226266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868226265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bbe1763130071f4b8ebeac891073f0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  coreCount: 4
+  eye: {fileID: 1537934595}
+--- !u!4 &1868226267
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868226265}
+  m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
+  m_LocalPosition: {x: -202.28, y: 6.1953, z: -1.2002}
+  m_LocalScale: {x: 1, y: 0.15845, z: 0.14315522}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1903428592 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 962828205472999134, guid: c146ddf6902c29f47a816929dcbd6f24, type: 3}
@@ -3709,6 +3786,7 @@ MonoBehaviour:
   health: 100
   damage: 10
   torretas: {fileID: 16630202}
+  manager: {fileID: 0}
 --- !u!1 &1936341714
 GameObject:
   m_ObjectHideFlags: 0
@@ -3820,7 +3898,7 @@ Transform:
   - {fileID: 1533529422}
   - {fileID: 1085933558}
   m_Father: {fileID: 1046023030}
-  m_RootOrder: 6
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2065379894 stripped
 Transform:
@@ -3842,6 +3920,7 @@ MonoBehaviour:
   health: 100
   damage: 10
   torretas: {fileID: 1809954376}
+  manager: {fileID: 0}
 --- !u!1 &2069757497 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5909657978969317402, guid: 90741fde23ea3d54490f373609167fc4, type: 3}
@@ -3862,6 +3941,7 @@ MonoBehaviour:
   health: 100
   damage: 10
   torretas: {fileID: 2069757497}
+  manager: {fileID: 0}
 --- !u!1 &2110807450 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5909657978969317402, guid: 90741fde23ea3d54490f373609167fc4, type: 3}
@@ -3882,6 +3962,7 @@ MonoBehaviour:
   health: 100
   damage: 10
   torretas: {fileID: 2110807450}
+  manager: {fileID: 1868226266}
 --- !u!1001 &2127266675
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3950,7 +4031,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 962828205472999134, guid: c146ddf6902c29f47a816929dcbd6f24, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 962828205472999134, guid: c146ddf6902c29f47a816929dcbd6f24, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4148,7 +4229,7 @@ PrefabInstance:
       objectReference: {fileID: 543251536}
     - target: {fileID: 3043959826253839865, guid: 817f224042c48fd448f3fbd85b6ec9f8, type: 3}
       propertyPath: FuerzaSalto
-      value: 1300
+      value: 3200
       objectReference: {fileID: 0}
     - target: {fileID: 3043959826253839866, guid: 817f224042c48fd448f3fbd85b6ec9f8, type: 3}
       propertyPath: m_Name

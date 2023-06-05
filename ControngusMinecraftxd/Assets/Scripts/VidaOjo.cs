@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Vidatorretasboss : MonoBehaviour
+public class VidaOjo : MonoBehaviour
 
 {
     public int health = 100;
@@ -10,7 +10,7 @@ public class Vidatorretasboss : MonoBehaviour
 
     public GameObject torretas;
 
-    public GameManager manager;
+    
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -31,7 +31,13 @@ public class Vidatorretasboss : MonoBehaviour
             sfxPlayer.Instance.Explodesfx();
             Destroy(gameObject);
             Debug.Log("Pared Destruida");
-            manager.coreDestroyed();
+            Win();
+            
         }
+    }
+
+    public void Win()
+    {
+        Debug.Log("Ganaste el Juego!!!");
     }
 }
