@@ -12,10 +12,8 @@ GameObject:
   - component: {fileID: 5909657978969317378}
   - component: {fileID: 5909657978969317379}
   - component: {fileID: 5909657978969317376}
-  - component: {fileID: 5909657978969317377}
   - component: {fileID: 5909657978969317382}
   - component: {fileID: 5909657978969317383}
-  - component: {fileID: 5909657978969317380}
   m_Layer: 0
   m_Name: BossVida
   m_TagString: Untagged
@@ -103,20 +101,6 @@ MonoBehaviour:
   sizex: 0.5
   sizey: 10.16
   sizez: 10.97
---- !u!114 &5909657978969317377
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5909657978969317402}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fde1490d5e547448b60cb2ed10f3332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  damage: 10
 --- !u!54 &5909657978969317382
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -146,17 +130,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.8932209, y: 10.6318245, z: 9.994546}
   m_Center: {x: 0.48979664, y: 4.815913, z: 5.6282725}
---- !u!114 &5909657978969317380
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5909657978969317402}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fde1490d5e547448b60cb2ed10f3332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  damage: 10

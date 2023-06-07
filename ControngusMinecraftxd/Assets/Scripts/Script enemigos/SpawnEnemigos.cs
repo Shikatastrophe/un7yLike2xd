@@ -12,6 +12,7 @@ public class SpawnEnemigos : MonoBehaviour
         public Transform enemy;
         public int count;
         public float rate;
+        public GameObject enemyobject;
     }
 
     public Wave[] waves;
@@ -96,20 +97,20 @@ public class SpawnEnemigos : MonoBehaviour
         state = SpawnState.SPAWING;
         for (int i = 0; i < _wave.count; i++)
         {
-            SpawnEnemy(_wave.enemy);
+            SpawnEnemy(_wave.enemyobject);
+            
             yield return new WaitForSeconds(1f / _wave.rate);
         }
         state = SpawnState.WAITING;
         yield break;
     }
-    void SpawnEnemy(Transform _enemy)
+    void SpawnEnemy(GameObject a)
     {
-        Debug.Log("Spawning Enemy:" + _enemy.name);// hacer mas enemigos
-     
+        Debug.Log("Spawning Enemy:" + a.name);// hacer mas enemigos
 
         Transform _sp = spawnpoints[Random.Range(0, spawnpoints.Length)];//spawnpoints del enemigo, si no hay spawnpoints no funciona
-        Instantiate(_enemy, _sp.position, _sp.rotation); //hacer que spawneen en otro lugar ahorita spawnean en (0,0,0)
-   
+        Instantiate(a, _sp.position, _sp.rotation); //hacer que spawneen en otro lugar ahorita spawnean en (0,0,0)
+    
     }
     
 }

@@ -361,7 +361,6 @@ GameObject:
   - component: {fileID: 962828205854736196}
   - component: {fileID: 962828205854736197}
   - component: {fileID: 962828205854736198}
-  - component: {fileID: 8534751039037062450}
   m_Layer: 0
   m_Name: Puertongus
   m_TagString: Untagged
@@ -449,20 +448,6 @@ MonoBehaviour:
   sizex: 0.5
   sizey: 10.16
   sizez: 10.97
---- !u!114 &8534751039037062450
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 962828205854736199}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fde1490d5e547448b60cb2ed10f3332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  damage: 10
 --- !u!1 &962828206108880632
 GameObject:
   m_ObjectHideFlags: 0

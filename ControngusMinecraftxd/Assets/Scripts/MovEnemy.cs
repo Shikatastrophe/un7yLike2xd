@@ -4,28 +4,44 @@ using UnityEngine;
 
 public class MovEnemy : MonoBehaviour
 {
+    public GameObject enemy;
     Formulas formulas;
+    public float coolDown;
+    public string tags;
 
-    public GameObject PuntoA;
-    public GameObject PuntoB;
+    public float tiSigDis;
+
+    [SerializeField] bool mover = false;
     // Start is called before the first frame update
     void Start()
     {
-        
+        enemy = GameObject.FindGameObjectWithTag(tags);
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        formulas = new Formulas();
-        if (gameObject.transform.position.z > PuntoA.transform.position.z)
-        {
-            gameObject.transform.position = formulas.Translacion(gameObject.transform.position, new Vector3(PuntoA.transform.position.x, PuntoA.transform.position.y, PuntoA.transform.position.z * 0.01f));
-        }
-        else if (gameObject.transform.position.z < PuntoB.transform.position.z)
-        {
-            gameObject.transform.position = formulas.Translacion(gameObject.transform.position, new Vector3(PuntoB.transform.position.x, PuntoB.transform.position.y, PuntoB.transform.position.z * 0.01f));
-        }
 
+        formulas = new Formulas();
+        if (tiSigDis > 0 && mover)
+        {
+            tiSigDis -= Time.deltaTime;
+            gameObject.transform.position = formulas.Translacion(gameObject.transform.position, new Vector3(enemy.transform.position.x *0, enemy.transform.position.y *0, enemy.transform.position.z * 0.01f));
+            Destroy(gameObject, coolDown);
+        }
+        if (tiSigDis <= 0)
+        {
+            //gameObject.transform.position = formulas.Translacion(gameObject.transform.position, new Vector3(enemy.transform.position.x * 0.1f, enemy.transform.position.y, enemy.transform.position.z));
+            tiSigDis = coolDown;
+            mover = false;
+        }
+        mover = true;
+
+    }
+
+    public void moverxd()
+    {
+        mover = true;
+        
     }
 }

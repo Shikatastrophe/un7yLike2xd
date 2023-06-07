@@ -9,6 +9,7 @@ public class Vidapared : MonoBehaviour
     public int damage = 10;
 
     public GameObject paredd;
+    public GameObject[] puerta;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -27,6 +28,10 @@ public class Vidapared : MonoBehaviour
         if (health <= 0)
         {
             sfxPlayer.Instance.Explodesfx();
+            for (int i = 0; i < puerta.Length; i++)
+            {
+                Destroy(puerta[i]);
+            }
             paredd.GetComponent<MovPared>().moverxd();
             Destroy(gameObject);
             Debug.Log("Pared Destruida");

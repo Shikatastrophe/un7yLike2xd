@@ -5,13 +5,22 @@ using UnityEngine;
 public class VidaOjo : MonoBehaviour
 
 {
+
+    Formulas formulas;
+
     public int health = 100;
     public int damage = 10;
 
     public GameObject torretas;
 
-    
+    public GameObject[] toDespawn;
 
+    public GameObject player;
+
+    private void Update()
+    {
+        formulas = new Formulas();
+    }
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Bala"))
@@ -38,6 +47,11 @@ public class VidaOjo : MonoBehaviour
 
     public void Win()
     {
+        for (int i = 0; i < toDespawn.Length; i++)
+        {
+            Destroy(toDespawn[i]);
+        }
+        player.transform.position = formulas.Translacion(player.transform.position, new Vector3(1.15f, 10.5f, 1.4f));
         Debug.Log("Ganaste el Juego!!!");
     }
 }

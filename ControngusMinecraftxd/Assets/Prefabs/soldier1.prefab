@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 1696163287017267558}
   - component: {fileID: 1696163287017267559}
   - component: {fileID: 1696163287017267556}
+  - component: {fileID: 3948601755018011828}
+  - component: {fileID: 4016985352895712003}
   m_Layer: 0
   m_Name: soldier1
   m_TagString: Untagged
@@ -105,3 +107,35 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &3948601755018011828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696163287017267557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fb4ef8fce1f39c40b55f59c6ccf788e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 0}
+  coolDown: 5.5
+  tiSigDis: 0
+  mover: 0
+--- !u!54 &4016985352895712003
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696163287017267557}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 4
+  m_CollisionDetection: 0

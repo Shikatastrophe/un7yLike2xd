@@ -8,6 +8,8 @@ public class MovPared : MonoBehaviour
     Formulas formulas;
     public float coolDown;
 
+    public GameObject escudo;
+
     public float tiSigDis;
 
     bool mover = false;
@@ -25,12 +27,14 @@ public class MovPared : MonoBehaviour
         {
             tiSigDis -= Time.deltaTime;
             gameObject.transform.position = formulas.Translacion(gameObject.transform.position, new Vector3(nv.transform.position.x * 0.1f, nv.transform.position.y, nv.transform.position.z));
+            escudo.SetActive(true);
         }
         if (tiSigDis <= 0)
         {
             //gameObject.transform.position = formulas.Translacion(gameObject.transform.position, new Vector3(nv.transform.position.x * 0.1f, nv.transform.position.y, nv.transform.position.z));
             tiSigDis = coolDown;
             mover = false;
+            escudo.SetActive(false);
         }
         
     }

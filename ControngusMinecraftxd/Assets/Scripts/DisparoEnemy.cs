@@ -14,12 +14,14 @@ public class DisparoEnemy : MonoBehaviour
 
     private float tiSigDis;
 
+    public string tagsss = "Player";
+
     public GameObject jugador;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        jugador = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame

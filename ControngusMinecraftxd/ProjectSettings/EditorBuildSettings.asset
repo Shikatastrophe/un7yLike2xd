@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Title Scene.unity
     guid: fd081ead830365c4784ae83de5ae2203
   - enabled: 1
+    path: Assets/Scenes/Level Select.unity
+    guid: e0d88e6885d97ac439514cba22cff873
+  - enabled: 1
     path: Assets/Scenes/Escena.unity
     guid: 4a1bd20719f318c4a91647a120559da4
+  - enabled: 1
+    path: Assets/Scenes/EscenaPERO BIEEEN DIFICIL.unity
+    guid: 86538d3c47743d74a8f2fa6b4f63ae1c
   m_configObjects: {}
